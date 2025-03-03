@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Shadows+Into+Light&display=swap');
 
 * {
     margin: 0;
@@ -8,8 +9,10 @@
 }
 
 body {
-    font-family: Montserrat;
-    background-color: white !important;
+    font-family: "Shadows Into Light";
+    background-image: url("images/background.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 
 a{
@@ -21,7 +24,7 @@ p {
 }
 
 body h1{
-    font-family: "Roboto", sans-serif;
+    font-family: "Shadows Into Light", sans-serif;
 }
 .split {
     height: 100%;
@@ -45,19 +48,18 @@ body h1{
 .centered {
     position: absolute;
     top:37%;
-    left:50%;
+    left:0%;
     transform: translate(-50%,-50%);
     text-align: center;
 }
 
 .container{ /* using flexbox for the header - container is used to keep items in the header.*/
-    background-color: black;
+    background-color: transparent;
     max-width: 100%;
     min-width: none;
     padding: 0.625rem;
     display: flex;
     position: sticky;
-    align-items: center;
 }
 
 .main-header .container{ /*spacing for flexbox */
@@ -68,11 +70,6 @@ body h1{
     flex-shrink: 0;
 }
 
-
-.main-nav li{ 
-    display: inline;
-    white-space: nowrap;
-}
 
 /*i've used a list for the header, main-nav are the items aligned with the search bar, lower nav is below the search bar,  */
 
@@ -92,24 +89,19 @@ body h1{
 .main-nav ul{
     margin: 0em 1em 0.5em;
     text-align: center;
-    display: flex;
     padding: 0;
     margin: 0;
     gap: 1.25rem;    
+    list-style-type: none;
 }
 
 /*alinging main nav  */ 
 
-.main-nav li{
-    display: inline;
-}
+
 /*display for the main nav items. */
 
 
-.main-nav a {
-    display: inline-block;
-    padding: .5em 3em;
-}
+
 
 .main-nav .active{
         background-color: purple;
@@ -131,3 +123,13 @@ body h1{
     background-color: #ddd;
     color: black;
 }
+
+.main-header #logotext{
+    margin-left: -50px;
+}
+
+.main-nav ul{
+    margin-right: -100px;
+}
+
+
