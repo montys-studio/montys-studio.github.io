@@ -11,8 +11,10 @@
 body {
     font-family: "Shadows Into Light";
     background-image: url("images/background.jpg");
-    background-size:cover;
+    background-size:contain;
+    background-size: cover;
     background-repeat:no-repeat;
+    background-position:80% 25% ;
 }
 
 a{
