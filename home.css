@@ -1,3 +1,133 @@
-body{
-    background-color: yellowgreen;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+    background-color: white !important;
+}
+
+a{
+    z-index: 5;
+}
+
+p {
+    text-align: center;
+}
+
+body h1{
+    font-family: "Roboto", sans-serif;
+}
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    overflow-x: hidden;
+    padding-top:1.25rem;
+}
+
+.left{
+    left:0
+}
+
+
+.right{
+    right:0;
+    padding-top: 59.375rem;
+    padding-right: 68.75rem;
+}
+
+.centered {
+    position: absolute;
+    top:37%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.container{ /* using flexbox for the header - container is used to keep items in the header.*/
+    background-color: black;
+    max-width: 100%;
+    min-width: none;
+    padding: 0.625rem;
+    display: flex;
+    position: sticky;
+    align-items: center;
+}
+
+.main-header .container{ /*spacing for flexbox */
+    justify-content: space-around;
+ }
+
+ .main-nav { /* stops buttons on right (account, about us basket) from shrinking */
+    flex-shrink: 0;
+}
+
+
+.main-nav li{ 
+    display: inline;
+    white-space: nowrap;
+}
+
+/*i've used a list for the header, main-nav are the items aligned with the search bar, lower nav is below the search bar,  */
+
+
+.main-nav a {
+    padding: 0.5em 2em;
+    text-decoration: none;
+    color: white;
+    font-size: 1.125rem;
+    border-radius: 0.25rem;
+    padding: 0.5em 1em;
+    display: block;
+}
+
+/* sizing for each link, and border. */
+
+.main-nav ul{
+    margin: 0em 1em 0.5em;
+    text-align: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 1.25rem;    
+}
+
+/*alinging main nav  */ 
+
+.main-nav li{
+    display: inline;
+}
+/*display for the main nav items. */
+
+
+.main-nav a {
+    display: inline-block;
+    padding: .5em 3em;
+}
+
+.main-nav .active{
+        background-color: purple;
+        color: white;
+}
+
+/*different colour link for the page the user is on. */
+
+.main-nav a{
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.125rem;
+    border-radius: 0.25rem;
+}
+
+.main-nav a:hover{
+    background-color: #ddd;
+    color: black;
 }
