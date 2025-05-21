@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Monty's Studio - Home</title>
+        <link rel="stylesheet" type="text/css" href="contact.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.js" type="text/javascript"></script> <!--Scripts needed for jQuery-->
+        <script src="https://kwesforms.com/v2/kf-script.js" defer></script>
+        <script src="contact.js" defer></script>
+
+    
+        <!--leaving space for links to JS-->
+    </head>
+    <body>
+        <div class="background-image"></div>
+        <header class = "header">
+            <div class="container">
+                <a href="index.html" class="logo1"><img src="images\montys-logo-text.png" id="logotext"alt="Monty's Studio" width="120" height="80"></a>
+                <a href="index.html" class="cassette"><img src="images\montys-v2-04-03.png" id="logo"alt="Monty's Logo" width="80" height="80"></a>
+                <nav class="main-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <h1 id="contact-title">Contact Us</h1>
+        <p id="subtitle">
+            Got a question? <br> From quotes to questions, fill out the form and we'll get back to you!
+        </p>
+        <div class="wrapper inputs">
+            <form id="contactForm" name="contactForm" class="kf-form" method="POST" action="https://kwesforms.com/api/f/pcTnZS0wT2BQA2H9bt8E">
+                <div class="row inputPair">
+                    <label for="firstName">
+                        First Name
+                    </label>
+                        <input name="firstName" id="firstName" type="text"required="required">
+
+                    <label for="lastName">
+                        Last Name
+                    </label>
+                        <input name="lastName" type="text" id="lastName" required="required">
+                </div>
+                <label for="emailAddress">
+                    Email Address
+                </label>
+                    <input name="emailAddress" type="email" id="emailAddress" required="required">
+
+                <label for="query">
+                    What can we help you with?
+                </label>
+                    <textarea name="query" id="query" required="required"></textarea>
+
+                <input type="submit" id="contSubmit" value="Submit">
+            </form>
+        </div>
+        
+
