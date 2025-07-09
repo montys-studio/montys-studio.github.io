@@ -103,9 +103,9 @@ body h1 {
 
 .cassette {
     position: absolute;
-    left: 49%;
+    left: 50%;
     transform: translateX(-50%);
-    transform: translateY(5%);
+    top: 8%
 }
 
 .logo1 {
