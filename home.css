@@ -109,11 +109,9 @@ body h1 {
 }
 
 .logo1 {
-    flex: 1;
     margin-left: 20px;
-    min-width: 1000px;
     margin-top: 10px;
-}
+}   
 
 @media (max-width: 768px) {
     .container {
